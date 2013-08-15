@@ -26,8 +26,6 @@ are for this elapsed time.
 %setup -n check_email_delivery-%{version}
 
 # Avoid filenames with unnecessary punction in them
-%{__mv} "./docs/check_smtp_send (Greek's conflicted copy 2011-08-24).pod" \
-       ./docs/check_smtp_send-Greeks-conflicted-copy-2011-08-24.pod
 %{__mv} "docs/How to connect to IMAP server manually.txt" \
        docs/How-to-connect-to-IMAP-server-manually.txt
 
@@ -57,6 +55,10 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Sat Apr 21 2012 Nico Kadel-Garcia <nkadel@nkadel-sl6.localdomain> - 0.68-0.1
 - Update to 0.7.1b
+- Doc file "check_smtp_send (Greek's conflicted copy 2011-08-24).pod"
+  discarded upstream, no longer needs renaming
+
+Discard renaming of text file with "Grrek's" in the name.
 
 * Sun Feb  5 2012 Nico Kadel-Garcia <nkadel@nkadel-sl6.localdomain> - 0.68-0.1
 - Update to 0.7.1a
